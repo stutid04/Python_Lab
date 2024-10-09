@@ -1,0 +1,76 @@
+'''int_a =int(input("enter an integer"))
+int_b =int(input("enter integer"))
+print("Integer Operations:")
+print("Sum:", int_a + int_b)
+print("Difference:", int_a - int_b)
+print("Product:", int_a * int_b)
+print("Division:", int_a / int_b)
+print("Modulus:", int_a % int_b)
+print("Power:", int_a ** int_b)
+print()
+float_a =float(input("enter floating point number"))
+float_b =float(input("enter floating point number"))
+print("Float Operations:")
+print("Sum:", float_a + float_b)
+print("Difference:", float_a - float_b)
+print("Product:", float_a * float_b)
+print("Division:", float_a / float_b)
+print()
+string_a =input("enter a string")
+string_b =input("enter a string")
+print("String Operations:")
+print("Concatenation:", string_a + " " + string_b)
+print("Repetition:", string_a * 3)
+print()
+bool_a = True
+bool_b = False
+print("Boolean Operations:")
+print("AND:", bool_a and bool_b)
+print("OR:", bool_a or bool_b)
+print("NOT:", not bool_a)
+print()
+list_a=list(map(int, input("Enter a list of integers separated by space: ").split()))
+list_b =list(map(int, input("Enter a list of integers separated by space: ").split()))
+print("List Operations:")
+print("Concatenation:", list_a + list_b)
+print("Repetition:", list_a * 2)
+print("Access Element at index 1:", list_a[1])
+print()
+
+# Tuple demonstration
+tuple_a =tuple(map(int, input("Enter elements of the tuple separated by space: ").split()))
+tuple_b =tuple(map(int, input("Enter elements of the tuple separated by space: ").split()))
+
+print("Tuple Operations:")
+print("Concatenation:", tuple_a + tuple_b)
+print("Repetition:", tuple_a * 2)
+print("Access Element at index 2:", tuple_a[2])
+print()'''
+
+# Dictionary demonstration
+dict_a = input("Enter the dictionary in the format key1:value1, key2:value2: ")
+user_dict = {}
+for item in dict_a.split(','):
+    key, value = item.split(':')
+    user_dict[key.strip()] = value.strip() 
+print("Dictionary with mixed types:", user_dict)
+dict_b= input("Enter the dictionary in the format key1:value1, key2:value2: ")
+user_dict = {}
+for item in dict_b.split(','):
+    key, value = item.split(':')
+    user_dict[key.strip()] = value.strip()  
+print("Dictionary with mixed types:", user_dict)
+print("Dictionary Operations:")
+print("Access value by key 'a':", dict_a[1])
+dict_a.update(dict_b)
+print("Updated Dictionary:", dict_a)
+print()
+
+# Set demonstration
+set_a =set(map(int, input("Enter elements of the set separated by spaces: ").split()))
+set_b =set(map(int, input("Enter elements of the set separated by spaces: ").split()))
+print("Set Operations:")
+print("Union:", set_a | set_b)
+print("Intersection:", set_a & set_b)
+print("Difference:", set_a - set_b)
+print()
