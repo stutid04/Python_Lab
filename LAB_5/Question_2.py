@@ -1,0 +1,5 @@
+l1= list(map(int, input("Enter first list of numbers: ").split()))
+l2= list(map(int, input("Enter second list of numbers: ").split()))
+l3= list(map(int, input("Enter third list of numbers: ").split()))
+result = list(map(lambda x, y, z: x + y + z, l1, l2, l3))
+print(result)
