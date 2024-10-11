@@ -1,0 +1,6 @@
+lst1 = list(map(int, input("Enter first list: ").split()))
+lst2 = list(map(int, input("Enter second list: ").split()))
+sum_list = list(map(lambda x, y: x + y, lst1, lst2))
+diff_list = list(map(lambda x, y: x - y, lst1, lst2))
+print("Sum:", sum_list)
+print("Difference:", diff_list)
